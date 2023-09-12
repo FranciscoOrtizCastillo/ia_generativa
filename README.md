@@ -99,3 +99,18 @@ Video en el que empezamos a analizar en profundidad GPT. Vemos la evolución de 
 # 021.- Curso de IA Generativa. Atención Multi-cabeza enmascarada en GPT
 
 Video en el que vemos el modo en el que GPT aplica la atención multi-cabeza al tratarse de un modelo auto-regresivo y usar solo los decodificadores de la arquitectura transformer. Vemos ejemplos de su uso y los visualizamos gráficamente con el uso de Bertviz, comparando su uso de las cabezas de atención con el modelo auto-codificado de BERT.
+
+
+## Notas
+
+```bash
+nvidia-smi -q -g 0 -d UTILIZATION -l
+
+nvidia-smi -l 1
+
+pip install gpustat
+
+gpustat -cp
+watch -n 0.5 -c gpustat -cp --color
+
+``````
